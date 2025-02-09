@@ -101,11 +101,11 @@ require_once('head.php') ?>
                                         <td>Site Address:</td>
                                         <td><input name="site_address" value="<?php print $sqli->getSettings('site_address'); ?>" type="text" class="form-control" placeholder="Site Address" /></td>
                                     </tr>
-                                    <tr>
+                                    <tr style="display: none;">
                                         <td>Email:</td>
                                         <td><input name="custom_email" value="<?php print $sqli->getSettings('site_email'); ?>" type="text" class="form-control" placeholder="custom_email" /></td>
                                     </tr>
-                                    <tr>
+                                    <tr style="display: none;">
                                         <td>Application Link:</td>
                                         <td><input name="application_link" value="<?php print $sqli->getSettings('application_link'); ?>" type="text" class="form-control" placeholder="Application Link" /></td>
                                     </tr>
@@ -117,7 +117,7 @@ require_once('head.php') ?>
                                         <td>Instagram:</td>
                                         <td><input name="instagram" value="<?php print $sqli->getSettings('site_instagram'); ?>" type="text" class="form-control" placeholder="Instagram" /></td>
                                     </tr>
-                                    <tr>
+                                    <tr style="display: none;">
                                         <td>Linkedin:</td>
                                         <td><input name="site_linkedin" value="<?php print $sqli->getSettings('site_linkedin'); ?>" type="text" class="form-control" placeholder="Linkedin" /></td>
                                     </tr>

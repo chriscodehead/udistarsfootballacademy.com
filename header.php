@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="../">
-        <img width="100" src="img/logo.png" alt="logo" />
+        <img width="80" style="margin-top: -15px;" src="img/logo.png" alt="logo" />
       </a>
       <button
         class="navbar-toggler"
@@ -19,6 +19,10 @@
 
           <li class="nav-item">
             <a class="nav-link" href="about">The Club</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery">Gallery</a>
           </li>
 
           <!-- <li class="nav-item">

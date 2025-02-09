@@ -48,6 +48,9 @@
                <a href="players"> Players </a>
              </li>
              <li>
+               <a href="gallery">Gallery</a>
+             </li>
+             <li>
                <a href="contact"> Contact </a>
              </li>
            </ul>
@@ -64,9 +67,9 @@
            <div class="d-flex mt-3 align-items-center">
              <input
                type="text"
-               class="form-control"
+               class="form-control" id="subcribe_email" name="subcribe_email"
                placeholder="Enter Email" />
-             <button type="submit" class="btn scub-btn">
+             <button onclick="contatMail();" type="button" class="btn scub-btn">
                <svg
                  xmlns="http://www.w3.org/2000/svg"
                  width="16"
@@ -160,73 +163,38 @@
      </div>
 
      <div class="head-contact d-block d-lg-none">
-       <a href="index-2.html" class="logo-side">
-         <img src="images/logo.png" alt="logo" />
+       <a href="./" class="logo-side">
+         <img src="img/logo.png" alt="logo" />
        </a>
 
        <div class="mobile-menu-sec mt-3">
          <ul>
-           <li class="active-m">
-             <a href="matches.html"> Matches </a>
-           </li>
            <li>
-             <a href="about.html"> The Club </a>
+             <a href="about"> The Club </a>
            </li>
 
-           <li class="active-m">
-             <a href="schedule.html"> Schedule </a>
+           <li>
+             <a href="news"> News </a>
            </li>
            <li>
-             <a href="news.html"> News </a>
+             <a href="players"> Players </a>
            </li>
            <li>
-             <a href="players.html"> Players </a>
-           </li>
-           <li>
-             <a href="media.html"> Media </a>
-           </li>
-           <li>
-             <a href="shop.html"> Shop </a>
-           </li>
-           <li>
-             <a href="contact.html"> Contact </a>
+             <a href="contact"> Contact </a>
            </li>
          </ul>
        </div>
        <div class="quick-link">
          <ul>
            <li>
-             <i class="fab fa-whatsapp"></i> <span> 180-250-9625 </span>
+             <i class="fab fa-whatsapp"></i> <span> <?php print $sitePhone; ?> </span>
            </li>
            <li>
-             <i class="bi bi-envelope"></i> <span> example@gmail.com</span>
+             <i class="bi bi-envelope"></i> <span> <?php print $siteEmail; ?></span>
            </li>
          </ul>
        </div>
-       <ul class="side-media">
-         <li>
-           <a href="#"> <i class="fab fa-facebook-f"></i> </a>
-         </li>
-         <li>
-           <a href="#">
-             <svg
-               xmlns="http://www.w3.org/2000/svg"
-               width="16"
-               height="16"
-               fill="currentColor"
-               class="bi bi-twitter-x"
-               viewBox="0 0 16 16">
-               <path
-                 d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-             </svg></a>
-         </li>
-         <li>
-           <a href="#"> <i class="fab fa-google-plus-g"></i> </a>
-         </li>
-         <li>
-           <a href="#"> <i class="fab fa-instagram"></i> </a>
-         </li>
-       </ul>
+
      </div>
 
    </div>
@@ -274,4 +242,34 @@
        }
      }
    });
+ </script>
+ &nbsp;
+ <script>
+   function contatMail() {
+     var hr = new XMLHttpRequest();
+     var url = "reg_process.php";
+     var subcribe_email = document.getElementById('subcribe_email').value;
+     var vars = "subcribe_email=" + subcribe_email;
+
+     if (subcribe_email == "") {
+       sweetUnpre("Please enter a valid email address!");
+     } else {
+       var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+       if (!emailReg.test(subcribe_email)) {
+         sweetUnpre('Please use a valid email address!');
+       } else {
+         hr.open("POST", url, true);
+         hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+         hr.onreadystatechange = function() {
+           if (hr.readyState == 4 && hr.status == 200) {
+             var return_data = hr.responseText;
+             sweetUnpre(return_data);
+             document.getElementById('subcribe_email').value = "";
+           }
+         }
+         hr.send(vars);
+       }
+       sweetUnpre('processing...');
+     }
+   }
  </script>

@@ -116,12 +116,12 @@ require_once('head.php') ?>
                   <tr>
                     <td>
                       <label>Caption:</label>
-                      <input class="form-control" placeholder="Emeka Ugo" type="text" value="" name="caption">
+                      <input class="form-control" placeholder="" type="text" value="" name="caption">
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <label>Profile Picture(300 X 385):</label>
+                      <label>Profile Picture:</label>
                       <input type="file" value="" name="file">
                     </td>
                   </tr>

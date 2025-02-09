@@ -3,8 +3,7 @@ require_once('include.php');
 $active2 = 'active';
 $title = 'About ' . $siteName;
 $description = 'Udi Stars Football Academy is a premier Nigerian football academy dedicated to nurturing young talents and providing educational opportunities. Founded by Barr. Joseph Chukwudi Chime, we blend football training with academic support to empower underprivileged youths for global success.';
-$keyword = 'football academy Nigeria, Udi Stars Football Academy, Nigerian football talent, youth football development, Enugu football academy, football training Nigeria, sports and education, professional football coaching, grassroots football Nigeria, football scholarships Nigeria.';
-require_once('head.php'); ?>
+$keyword = 'football academy Nigeria, Udi Stars Football Academy, Nigerian football talent, youth football development, Enugu football academy, football training Nigeria, sports and education, professional football coaching, grassroots football Nigeria, football scholarships Nigeria.'; ?>
 <!doctype html>
 <html lang="en">
 
@@ -119,50 +118,28 @@ require_once('head.php'); ?>
       <div class="container">
         <h2 class="comon-heading m-0"> Our Management Staff </h2>
         <div class="mangemnet-sf owl-carousel owl-theme mt-4">
-          <div class="items-man">
-            <figure>
-              <img src="images/manages-st.jpg" alt="pmg" />
-            </figure>
-            <div class="name">
-              <h5> Jores Leperto
-                <span class="d-block"> President </span>
-              </h5>
-            </div>
-          </div>
 
-          <div class="items-man">
-            <figure>
-              <img src="images/manages-st2.jpg" alt="pmg" />
-            </figure>
-            <div class="name">
-              <h5> Jores Leperto
-                <span class="d-block"> Vice President (House & Admin)</span>
-              </h5>
-            </div>
-          </div>
+          <?php $sql = query_sql("SELECT * FROM $team_tb WHERE `category`='Management' ORDER BY id ASC");
+          if (mysqli_num_rows($sql) > 0) {
+            $c = 0;
+            while ($row = mysqli_fetch_assoc($sql)) { ?>
+              <div class="items-man">
+                <figure>
+                  <img src="photo/<?php print $row['picture']; ?>" alt="<?php print $row['name']; ?>" />
+                </figure>
+                <div class="name">
+                  <h5> <?php print $row['name']; ?>
+                    <span class="d-block"> <?php print $row['category']; ?> </span>
+                  </h5>
+                </div>
+              </div>
+            <?php $c++;
+            }
+          } else { ?>
+            <h4 style="padding: 20px;">No data found!</h4>
+          <?php } ?>
 
 
-          <div class="items-man">
-            <figure>
-              <img src="images/manages-st3.jpg" alt="pmg" />
-            </figure>
-            <div class="name">
-              <h5> Jores Leperto
-                <span class="d-block"> Hony. Treasurer & Sponsorship</span>
-              </h5>
-            </div>
-          </div>
-
-          <div class="items-man">
-            <figure>
-              <img src="images/manages-st4.jpg" alt="pmg" />
-            </figure>
-            <div class="name">
-              <h5> Jores Leperto
-                <span class="d-block"> Member - Entertainment</span>
-              </h5>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -230,51 +207,26 @@ require_once('head.php'); ?>
         </figure>
         <div class="coaching-slide owl-carousel owl-theme mt-5">
 
-          <div class="items-coach-man">
-            <figure>
-              <img src="images/co1.jpg" alt="pmg" />
-            </figure>
-            <div class="name">
-              <h5> Jores Leperto
-                <span class="d-block">Trainer</span>
-              </h5>
-            </div>
-          </div>
+          <?php $sql = query_sql("SELECT * FROM $team_tb WHERE `category`='Coach' ORDER BY id ASC");
+          if (mysqli_num_rows($sql) > 0) {
+            $c = 0;
+            while ($row = mysqli_fetch_assoc($sql)) { ?>
+              <div class="items-coach-man">
+                <figure>
+                  <img src="photo/<?php print $row['picture']; ?>" alt="<?php print $row['name']; ?>" />
+                </figure>
+                <div class="name">
+                  <h5> <?php print $row['name']; ?>
+                    <span class="d-block"><?php print $row['category']; ?></span>
+                  </h5>
+                </div>
+              </div>
+            <?php $c++;
+            }
+          } else { ?>
+            <h4 style="padding: 20px;">No data found!</h4>
+          <?php } ?>
 
-
-          <div class="items-coach-man">
-            <figure>
-              <img src="images/co4.jpg" alt="pmg" />
-            </figure>
-            <div class="name">
-              <h5> Jores Leperto
-                <span class="d-block">Trainer</span>
-              </h5>
-            </div>
-          </div>
-
-          <div class="items-coach-man">
-            <figure>
-              <img src="images/co2.jpg" alt="pmg" />
-            </figure>
-            <div class="name">
-              <h5> Jores Leperto
-                <span class="d-block">Trainer</span>
-              </h5>
-            </div>
-          </div>
-
-
-          <div class="items-coach-man">
-            <figure>
-              <img src="images/co3.jpg" alt="pmg" />
-            </figure>
-            <div class="name">
-              <h5> Jores Leperto
-                <span class="d-block">Trainer</span>
-              </h5>
-            </div>
-          </div>
         </div>
       </div>
     </div>

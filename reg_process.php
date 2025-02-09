@@ -2,6 +2,29 @@
 <?php require_once('lib/basic-functions.php'); ?>
 <?php require_once('emails_lib.php'); ?>
 <?php
+if (isset($_POST['subcribe_email'])) {
+	$subcribe_email = $_POST['subcribe_email'];
+	if (!empty($subcribe_email)) {
+		$check = $cal->checkifdataExists($subcribe_email, 'email', $user_tb);
+		if ($check == 1) {
+			print '!Oop email address already exist in the systems record!';
+		} else {
+			$username = uniqid();
+			$email = $subcribe_email;
+			$feilds = array('id', 'user_code', 'email', 'client_username');
+			$value = array(null, $bassic->randGenerator(), $email, $username);
+			$result = $cal->insertDataB($user_tb, $feilds, $value);
+			if ($result == 'Registration was successful. Proceed to login!') {
+				print 'Congratulations! Your email subscription was successful!';
+			} else {
+				print 'Your email subscription failed! Try again';
+			}
+		}
+	} else {
+		print 'Enter a valid email!';
+	}
+}
+
 if (isset($_POST['emailfgt'])) {
 	$emailfgt = $_POST['emailfgt'];
 	if (!empty($emailfgt)) {

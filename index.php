@@ -3,8 +3,7 @@ require_once('include.php');
 $active1 = 'active';
 $title = 'Welcome to ' . $siteName;
 $description = 'Udi Stars Football Academy is a premier Nigerian football academy dedicated to nurturing young talents and providing educational opportunities. Founded by Barr. Joseph Chukwudi Chime, we blend football training with academic support to empower underprivileged youths for global success.';
-$keyword = 'football academy Nigeria, Udi Stars Football Academy, Nigerian football talent, youth football development, Enugu football academy, football training Nigeria, sports and education, professional football coaching, grassroots football Nigeria, football scholarships Nigeria.';
-require_once('head.php'); ?>
+$keyword = 'football academy Nigeria, Udi Stars Football Academy, Nigerian football talent, youth football development, Enugu football academy, football training Nigeria, sports and education, professional football coaching, grassroots football Nigeria, football scholarships Nigeria.'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -80,20 +79,20 @@ require_once('head.php'); ?>
               <p>
                 Our expert coaches and structured training programs prepare young athletes for professional football careers both locally and internationally.
               </p>
-              <button type="button" class="buy-now-btn" name="button">
-                Abount Club
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right"
-                  viewBox="0 0 16 16">
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                </svg>
-              </button>
+              <a href="about"><button type="button" class="buy-now-btn" name="button">
+                  Abount Club
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                  </svg>
+                </button></a>
             </div>
             <div class="number-pagination">
               <span>2</span>
@@ -103,26 +102,26 @@ require_once('head.php'); ?>
           <div class="slider slide-3">
             <div class="slider-content">
               <h2>
-                Join the <?php print $siteName; ?> <span class="d-block"> Family</span>
+                Join the <?php print $siteName; ?> Family <span class="d-block"> </span>
               </h2>
               <p>
                 Ticket prices for the international challenge match between FC
                 United and Spain have been confirmed for October's encounter.
               </p>
-              <button type="button" class="buy-now-btn" name="button">
-                About Club
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right"
-                  viewBox="0 0 16 16">
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                </svg>
-              </button>
+              <a href="about"><button type="button" class="buy-now-btn" name="button">
+                  About Club
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                  </svg>
+                </button></a>
             </div>
             <div class="number-pagination">
               <span>3</span>
@@ -236,7 +235,7 @@ require_once('head.php'); ?>
     </div>
 
 
-    <div class="result-div1 mt-5">
+    <div style="display: none;" class="result-div1 mt-5">
       <div class="container">
         <div class="row gx-lg-5">
           <div class="col-lg-7 col-xl-8">
@@ -515,7 +514,7 @@ require_once('head.php'); ?>
         <p class="col-lg-7 my-4">
           Before founding the academy, Barr. Chime sponsored football competitions in his hometown, Obinagu, located in Udi Local Government Area, Enugu State, for over 15 years. However, he later shifted his focus to educational development by establishing the Joe & Onyi Foundation, which provides scholarships and educational support for underprivileged children.
         </p>
-        <a href="#" class="btn all-cm-btn">
+        <a href="about" class="btn all-cm-btn">
           Learn More
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -529,173 +528,6 @@ require_once('head.php'); ?>
               d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
           </svg>
         </a>
-      </div>
-    </div>
-
-    <div class="table-ag-div py-5">
-      <div class="container">
-        <h2 class="comon-heading m-0">League Table & Schedule</h2>
-
-        <div class="row g-lg-5">
-          <div class="col-lg-5">
-            <div class="table-div-left mt-4">
-              <h4>Serie A</h4>
-
-              <table id="seri1" class="display" style="width: 100%">
-                <thead>
-                  <tr>
-                    <th>Club</th>
-                    <th>W</th>
-                    <th>D</th>
-                    <th>L</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="comon-ft-cl">
-                        <figure class="d-flex align-items-center">
-                          <img src="images/fc-1.jpg" alt="fbn" />
-                          <figcaption>France FC</figcaption>
-                        </figure>
-                      </div>
-                    </td>
-                    <td>13</td>
-                    <td>01</td>
-                    <td>61</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="comon-ft-cl">
-                        <figure class="d-flex align-items-center">
-                          <img src="images/fc-2.jpg" alt="fbn" />
-                          <figcaption>France FC</figcaption>
-                        </figure>
-                      </div>
-                    </td>
-                    <td>12</td>
-                    <td>20</td>
-                    <td>61</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="comon-ft-cl">
-                        <figure class="d-flex align-items-center">
-                          <img src="images/fc-1.jpg" alt="fbn" />
-                          <figcaption>France FC</figcaption>
-                        </figure>
-                      </div>
-                    </td>
-                    <td>25</td>
-                    <td>36</td>
-                    <td>61</td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <div class="comon-ft-cl">
-                        <figure class="d-flex align-items-center">
-                          <img src="images/fc-1.jpg" alt="fbn" />
-                          <figcaption>France FC</figcaption>
-                        </figure>
-                      </div>
-                    </td>
-                    <td>25</td>
-                    <td>36</td>
-                    <td>61</td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <div class="comon-ft-cl">
-                        <figure class="d-flex align-items-center">
-                          <img src="images/fc-1.jpg" alt="fbn" />
-                          <figcaption>France FC</figcaption>
-                        </figure>
-                      </div>
-                    </td>
-                    <td>12</td>
-                    <td>36</td>
-                    <td>61</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <th>Club</th>
-                    <th>W</th>
-                    <th>D</th>
-                    <th>L</th>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="table-div-left mt-4">
-              <h4>Serie A</h4>
-
-              <table id="seri2" class="display" style="width: 100%">
-                <thead>
-                  <tr>
-                    <th>Date</th>
-                    <th>Event</th>
-                    <th>Time</th>
-                    <th>Venue</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Nov 10, 2022</td>
-                    <td>Royal FC <span>vs</span> GS FC</td>
-                    <td>12:00</td>
-                    <td>GST Stadium</td>
-                  </tr>
-                  <tr>
-                    <td>Nov 11, 2022</td>
-                    <td>Royal FC <span>vs</span> GS FC</td>
-                    <td>14:00</td>
-                    <td>GST Stadium</td>
-                  </tr>
-                  <tr>
-                    <td>Nov 12, 2022</td>
-                    <td>Royal FC <span>vs</span> GS FC</td>
-                    <td>14:30</td>
-                    <td>GST Stadium</td>
-                  </tr>
-
-                  <tr>
-                    <td>Nov 14, 2022</td>
-                    <td>Royal FC <span>vs</span> GS FC</td>
-                    <td>15:30</td>
-                    <td>GST Stadium</td>
-                  </tr>
-
-                  <tr>
-                    <td>Nov 15, 2022</td>
-                    <td>Royal FC <span>vs</span> GS FC</td>
-                    <td>19:30</td>
-                    <td>GST Stadium</td>
-                  </tr>
-
-                  <tr>
-                    <td>Nov 15, 2022</td>
-                    <td>Royal FC <span>vs</span> GS FC</td>
-                    <td>19:30</td>
-                    <td>GST Stadium</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <th>Date</th>
-                    <th>Event</th>
-                    <th>Time</th>
-                    <th>Venue</th>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -720,33 +552,30 @@ require_once('head.php'); ?>
         </div>
 
         <div class="team-slid owl-carousel owl-theme mt-5">
-          <a class="comon-plyaers">
-            <figure>
-              <img src="images/py1.jpg" alt="team1" />
-            </figure>
-            <div
-              class="name d-flex align-items-center justify-content-between">
-              <h5>
-                Dominick Dumbleton
-                <span class="d-block"> STRIKER</span>
-              </h5>
-              <span class="num"> 10 </span>
-            </div>
-          </a>
 
-          <a class="comon-plyaers">
-            <figure>
-              <img src="images/py2.jpg" alt="team1" />
-            </figure>
-            <div
-              class="name d-flex align-items-center justify-content-between">
-              <h5>
-                Jores Leperto
-                <span class="d-block"> Defender</span>
-              </h5>
-              <span class="num"> 32 </span>
-            </div>
-          </a>
+          <?php $sql = query_sql("SELECT * FROM $team_tb WHERE (`category`='Midfinder' || `category`='GoalKeeper' || `category`='Defender' || `category`='Forward') ORDER BY id ASC");
+          if (mysqli_num_rows($sql) > 0) {
+            $c = 0;
+            while ($row = mysqli_fetch_assoc($sql)) { ?>
+              <a href="players-details?id=<?php print $row['user_id']; ?>" class="comon-plyaers">
+                <figure>
+                  <img src="photo/<?php print $row['picture']; ?>" alt="<?php print $row['name']; ?>" />
+                </figure>
+                <div
+                  class="name d-flex align-items-center justify-content-between">
+                  <h5>
+                    <?php print $row['name']; ?>
+                    <span class="d-block"> <?php print $row['category']; ?></span>
+                  </h5>
+                  <span class="num"> <?php print $row['position']; ?> </span>
+                </div>
+              </a>
+            <?php $c++;
+            }
+          } else { ?>
+            <h4 style="padding: 20px;">No data found!</h4>
+          <?php } ?>
+
 
         </div>
       </div>
@@ -780,7 +609,7 @@ require_once('head.php'); ?>
         <div class="d-flex align-items-center justify-content-between">
           <h2 class="comon-heading m-0">News & Media Gallery</h2>
 
-          <a href="#" class="btn all-cm-btn">
+          <a href="news" class="btn all-cm-btn">
             View All
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -798,91 +627,72 @@ require_once('head.php'); ?>
 
         <div class="row g-lg-5 mt-5 mt-lg-0">
           <div class="col-lg-8">
-            <a href="#" class="left-cm-blogs">
-              <figure class="m-0">
-                <img src="images/blogs-tg.webp" alt="blogs" />
-              </figure>
-              <div class="blogs-ps-right ps-lg-4 pt-lg-4">
-                <h5>Draymond Green had bizarre reason</h5>
-                <ul class="list-unstyled d-flex align-items-center mt-2">
-                  <li><i class="fas fa-calendar-alt"></i> 27 June, 2020</li>
-                  <li><i class="far fa-comment-dots"></i> 89 Comments</li>
-                </ul>
-                <p class="mt-2">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. the printing and typesetting industry.
-                </p>
-                <h4 class="btn mt-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-arrow-up-right-square-fill"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z" />
-                  </svg>
-                </h4>
-              </div>
-            </a>
 
-            <a href="#" class="left-cm-blogs">
-              <figure class="m-0">
-                <img src="images/pso.webp" alt="blogs" />
-              </figure>
-              <div class="blogs-ps-right ps-lg-4 pt-lg-4">
-                <h5>Draymond Green had bizarre reason</h5>
-                <ul class="list-unstyled d-flex align-items-center mt-2">
-                  <li><i class="fas fa-calendar-alt"></i> 27 June, 2020</li>
-                  <li><i class="far fa-comment-dots"></i> 89 Comments</li>
-                </ul>
-                <p class="mt-2">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. the printing and typesetting industry.
-                </p>
-                <h4 class="btn mt-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-arrow-up-right-square-fill"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z" />
-                  </svg>
-                </h4>
-              </div>
-            </a>
+            <?php $sql = query_sql("SELECT * FROM $news ORDER BY id DESC LIMIT 3");
+            if (mysqli_num_rows($sql) > 0) {
+              $c = 0;
+              while ($row = mysqli_fetch_assoc($sql)) { ?>
+                <a href="news-details?id=<?php print $row['id']; ?>" class="left-cm-blogs">
+                  <figure class="m-0">
+                    <img src="<?php print 'photo/' . $row['post_image']; ?>" alt="<?php print $row['title']; ?>" />
+                  </figure>
+                  <div class="blogs-ps-right ps-lg-4 pt-lg-4">
+                    <h5><?php print $row['title']; ?></h5>
+                    <ul class="list-unstyled d-flex align-items-center mt-2">
+                      <li><i class="fas fa-calendar-alt"></i> <?php print $row['date_post']; ?></li>
+
+                    </ul>
+                    <p class="mt-2">
+                      <?php print $bassic->reduceTextLength($row['news'], 150);
+                      ?>
+                    </p>
+                    <h4 class="btn mt-4">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-arrow-up-right-square-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z" />
+                      </svg>
+                    </h4>
+                  </div>
+                </a>
+              <?php $c++;
+              }
+            } else { ?>
+              <h4 style="padding: 20px;">No updates found!</h4>
+            <?php } ?>
+
+
           </div>
 
           <div class="col-lg-4 right-home-blogs">
-            <a href="#" class="left-cm-blogs">
-              <figure class="m-0">
-                <img src="images/gfs.jpg" alt="blogs" />
-              </figure>
-              <div class="blogs-ps-right ps-lg-4 pt-lg-1">
-                <h5 class="mt-0">Draymond Green had bizarre reason</h5>
-                <ul class="list-unstyled d-flex align-items-center mt-2">
-                  <li><i class="fas fa-calendar-alt"></i> 27 June, 2020</li>
-                  <li><i class="far fa-comment-dots"></i> 89 Comments</li>
-                </ul>
-              </div>
-            </a>
 
-            <a href="#" class="left-cm-blogs">
-              <figure class="m-0">
-                <img src="images/fgh.jpg" alt="blogs" />
-              </figure>
-              <div class="blogs-ps-right ps-lg-4 pt-lg-1">
-                <h5 class="mt-0">Draymond Green had bizarre reason</h5>
-                <ul class="list-unstyled d-flex align-items-center mt-2">
-                  <li><i class="fas fa-calendar-alt"></i> 27 June, 2020</li>
-                  <li><i class="far fa-comment-dots"></i> 89 Comments</li>
-                </ul>
-              </div>
-            </a>
+            <?php $sql = query_sql("SELECT * FROM $news ORDER BY RAND() LIMIT 3");
+            if (mysqli_num_rows($sql) > 0) {
+              $c = 0;
+              while ($row = mysqli_fetch_assoc($sql)) { ?>
+                <a href="news-details?id=<?php print $row['id']; ?>" class="left-cm-blogs">
+                  <figure class="m-0">
+                    <img src="<?php print 'photo/' . $row['post_image']; ?>" alt="<?php print $row['title']; ?>" />
+                  </figure>
+                  <div class="blogs-ps-right ps-lg-4 pt-lg-1">
+                    <h5 class="mt-0"><?php print $row['title']; ?></h5>
+                    <ul class="list-unstyled d-flex align-items-center mt-2">
+                      <li><i class="fas fa-calendar-alt"></i> <?php print $row['date_post']; ?></li>
+                    </ul>
+                  </div>
+                </a>
+              <?php $c++;
+              }
+            } else { ?>
+              <h4 style="padding: 20px;">No updates found!</h4>
+            <?php } ?>
+
+
           </div>
         </div>
       </div>

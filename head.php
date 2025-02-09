@@ -55,4 +55,13 @@
     rel="stylesheet"
     href="cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" />
+  <link href="sweetalert-js/sweetalert.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="sweetalert-js/sweetalert.min.js"></script>
+  <script type="text/javascript">
+    function sweetUnpre(msg) {
+      swal(
+        msg
+      );
+    }
+  </script>
 </head>

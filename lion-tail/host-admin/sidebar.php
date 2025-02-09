@@ -95,12 +95,12 @@
                     <span style="color:#FFF; font-size:15px;">Gallery</span>
                 </a>
             </li>
-            <li class="<?php print @$actova9q; ?>">
+            <!-- <li class="<?php print @$actova9q; ?>">
                 <a class="" href="services">
                     <i class="fa fa-user"></i>
                     <span style="color:#FFF; font-size:15px;">Services</span>
                 </a>
-            </li>
+            </li> -->
             <!-- <li class="<?php print @$actova91; ?>">
                       <a class="" href="upload-course">
                           <i class="fa fa-ticket"></i>
